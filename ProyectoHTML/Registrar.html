@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><!--Informacion para el navegador (un nombre a nuestra pestaña)-->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" /> <!-- para las tildes --> <!--define metadatos-->
+    <title> Registrar|OrderyourFood</title>
+    <style>
+    body{
+     
+      text-align: center;
+      background-color: skyblue;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* ocupa toda la pantalla */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* coloca el contenido hacia abajo */
+      align-items: center; /* centra horizontalmente */
+  
+    }label {
+        display: inline-block;
+      width: 200px;
+      text-align: right;
+      margin-right: 15px;
+    }
+    input {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    
+    button {
+      
+      margin-top: 10px;
+      padding: 5px 10px;    
+      cursor: pointer;
+    }
+
+    a { /*para el boton de login*/
+      text-decoration: none;
+      color: black;
+    }
+
+
+
+
+
+    </style>
+
+</head>
+<body> <!--contenido que aparecera en la pagina-->
+  <div class="form-container">
+
+<!--bloques de contenedores--><div class="registro">
+     <h1 style="color: blue;"><u>REGISTRO</u></h1>
+<!--apertura para el formulario--><form action ="file:///C:/Users/ALONDRA/Desktop/ProyectoHTML/Registrar.html" method="post"><!--Metodo post Es para enviar informacion-->
+<!--label descripcion textual de form--><label for ="nombre completo">NOMBRE COMPLETO:</label>
+<!--input dato de entrada--><input type="text" id="nombre completo" name="nombre completo" placeholder="Ingrese nombre" /> <br/><br/>
+           
+           <label for="correo eletronico">CORREO ELECTRONICO:</label>
+           <input type="text" id="correo electronico" name="correo electronico" placeholder="Ingrese correo electronico"  /> <br/><br/>
+
+           <label for="contraseña">CONTRASEÑA:</label>
+           <input type="text" id="contraseña" name="contraseña" placeholder="Ingrese contraseña" size="15"  /> <br/><br/>
+
+           <label for="confirmar contraseña">CONFIRMAR CONTRASEÑA:</label>
+           <input type="text" id="confirmar contraseña" name="confirmar contraseña" placeholder="Ingrese nuevamente la contraseña " size="29" required/> <br/><br/><!--size es la cantidad de caracteres-->
+
+           <button type ="submit">REGISTRAR</button>
+      </form>
+   </div>
+   <p><button><a href = "file:///C:/Users/ALONDRA/Desktop/ProyectoHTML/Login.html">LOGIN</a></button></p>
+</body>
+</html>

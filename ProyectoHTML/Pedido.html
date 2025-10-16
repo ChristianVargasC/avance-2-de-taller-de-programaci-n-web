@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><!--Informacion para el navegador (un nombre a nuestra pestaña)-->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" /> <!-- para las tildes --> <!--define metadatos-->
+    <title> Pedido|OrderyourFood</title>
+     
+     <style>
+      body{ 
+        text-align: center;
+        background-color: skyblue;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+        header {
+        background-color: white; /* es el color de el fondo del texto inicio*/
+        padding: 10px;
+      }
+
+
+
+    nav ul li a { /* es el boton de inicio*/
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;  /*agrandar el texto*/
+      } 
+
+      
+
+
+     </style>
+
+
+</head>
+<body style="background-color: skyblue;" >
+<header><!--Es el encabezado-->
+        <nav><!--Para la navegacion-->
+            <ul><!--Lista ordenada-->
+                 <li><a href="file:///C:/Users/ALONDRA/Desktop/ProyectoHTML/Index.html">Inicio</a></li><!--item de la lista--><!--Href especifica el destino de enlace y a es referenciar-->
+            </ul>
+        </nav>
+    </header>
+<div class="form-container">
+<!--bloques de contenedores--><div class="pedido">
+ <h1 style="color: blue;"><u>PEDIDO</u></h1>
+<!--apertura para el formulario--><form action ="file:///C:/Users/ALONDRA/Desktop/ProyectoHTML/Inicio.html" method="post"><!--Metodo post Es para enviar informacion-->
+<!--descripcion textual de form--><label for ="nombre del cliente">NOMBRE DEL CLIENTE</label>
+<!--input dato de entrada--><input type="text" id="nombre del cliente" name="nombre del cliente" placeholder="Ingrese nombre" required /> <br/><br/>
+           <label for="direccion">DIRECCION</label>
+           <input type="text" id="direccion" name="direccion" placeholder="Ingrese direccion" required/> <br/><br/>
+           <label for="direccion">TELEFONO</label>
+           <input type="text" id="telefono" name="telefono" placeholder="Ingrese telefono" /> <br/><br/>
+
+           <h2 style="color: blue;"><u>SELECCION DE PLATOS </u></h2>
+           <h3>- Arroz con Mariscos - La Costa </h3>
+           <h3>Precio:s/32 </h3>
+           <label for="cantidad">CANTIDAD:</label> 
+           
+ <!--crea campos para asignar valores--><input type="number" id="cantidad" name="cantidad" required min="1" max="99">
+        
+
+           <h3>- Pollo a la braza - Norkys </h3>
+           <h3>Precio:s/65</h3>
+           <label for="cantidad">CANTIDAD:</label>
+ <!--crea campos para asignar valores--><input type="number" id="cantidad" name="cantidad" required min="1" max="99"> 
+       
+        <br></br> <div class="chekkbox-container">
+            <label>
+                <input type="checkbox" name="terminos" required />
+                Acepto los términos y condiciones
+            </label>
+   
+         <p><button type ="submit">ENVIAR PEDIDO</button></p>
+
+          
+        
+          
+    
+        </form>
+   </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
